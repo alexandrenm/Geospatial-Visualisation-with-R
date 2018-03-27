@@ -159,6 +159,7 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 * Next, it would be interesting to look what happened in each of this cities and compare
 * Compare to other months (this is only January 2017)
 * Compare to population density
+* Adding the borders of Essex would help
 * ...
 
 (WORK IN PROGRESS)
