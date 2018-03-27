@@ -123,7 +123,8 @@ ggmap(get_map(location='Essex', zoom=9)) +
 
 * Alternatively, the geom_density2d() can be a good option
 ```
-ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred"))
+ggmap(get_map(location='Essex', zoom=9)) + 
+    geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred"))
 ```
 ![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/janplot5.png)
 
@@ -136,6 +137,10 @@ densjan17 <- ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = po
 ```
 ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chosen dimensions
 ```
+* ...
+
+![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)
+
 (WORK IN PROGRESS)
 
 ## Authors
