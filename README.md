@@ -1,4 +1,4 @@
-# Spatial-Visualization-in-R
+# Spatial Visualization in R
 
 Some simple and useful commands to create nice maps.
 
