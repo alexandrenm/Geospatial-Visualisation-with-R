@@ -54,9 +54,11 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red")
 ```
 * xlim() and ylim() redefine the chart limits
 * alpha() gives transparency to the points
+* col="red" gives a red colour to the dots
 * ggtitle() adds a title to the charts
 * and the last bit adjusts the title to the center
 * Points are to large, but 'shape="."' is not working (work in progress)
+
 
 ## Authors
 
