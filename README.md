@@ -156,7 +156,7 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 
 * This one looks really good
 * Clearly, something happened in Southend-on-Sea, Basildon, Gays, Chalmsford, Harlow, Colchester and Calcton-on-Sea in January 2017
-* Next, it would be interesting to look what happened in each of this cities and compare
+* Next, it would be interesting to look what happened in each of these cities and compare
 * Compare to other months (this is only January 2017)
 * Compare to population density
 * Adding the borders of Essex would help
@@ -166,7 +166,7 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 
 **Data Summmary:**
 * Geospatial visualization help undersanding the data, but does not show everything
-* I still want to know wich crimes are happening in Essex, and how often
+* I still want to know which crimes are happening in Essex, and how often
 * Crimes in January 2017:
 ```
 table(pol01$Crime.type)
