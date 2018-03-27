@@ -152,7 +152,11 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 * Title was added
 * Plot saved slightly bigger using ggsave() function
 
-![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png?style=centerme)
+<p align="center">
+   <img src="![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)">
+</p>
+
+"![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)"
 
 * This one looks really good
 * Clearly, something happened in Southend-on-Sea, Basildon, Gays, Chalmsford, Harlow, Colchester and Calcton-on-Sea in January 2017
