@@ -156,7 +156,7 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 
 * This one looks better
 * Clearly, something happened in Southend-on-Sea, Basildon, Gays, Chalmsford, Harlow, Colchester and Calcton-on-Sea in January 2017
-* It tells where things happened, but  much some places are riskier than others.
+* It tells where things happened, but not how much some places are riskier than others.
 * Next, it would be interesting to look what happened in each of these cities and compare
 * Compare to other months (this is only January 2017)
 * Compare to population density
