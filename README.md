@@ -206,6 +206,11 @@ Anti-social behaviour                Bicycle theft                     Burglary
                         1244                         4127 
 ```
 
+* These tables help understanding what is happening but barplots are better
+* Horizontal and orderer barplots seem a good and clear presentation
+
+(WORK IN PROGRESS)
+
 ## Authors
 
 Alexandre Marques
