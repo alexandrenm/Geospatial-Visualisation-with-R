@@ -37,7 +37,7 @@ Plotting using the qmplot() function:
 install.packages("ggplot2") #if needed
 library(ggplot2)
 ```
-* Then one line code is enough.
+* Then, one line code is enough.
 ```
 qmplot(data = pol01, Longitude, Latitude)
 ```
@@ -61,8 +61,24 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red")
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot2.png)
 
-* points are to large. For some reason 'shape="."' is not working
+* points are too large. For some reason, *shape="."* is not working
 * legend still does not look good as well
+
+* But the worst is we already know where crimes happened, but we still don't know what crimes happened.
+* So, we add this bit of code
+```
+col=factor(Crime.type)
+```
+* Or this
+```
+col=pol01$Crime.type
+```
+```
+qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type)) 
++ xlim(-0.2,1.1) + ylim(51.4,52.1) 
++ ggtitle("Crime in Essex in January") 
++ theme(plot.title = element_text(hjust = 0.5))
+```
 
 ## Authors
 
