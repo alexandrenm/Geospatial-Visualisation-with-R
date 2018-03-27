@@ -1,4 +1,4 @@
-# Spatial Visualization with R
+# Geospatial Visualization with R
 
 Some simple and useful commands to create nice maps.
 
