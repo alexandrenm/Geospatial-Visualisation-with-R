@@ -66,13 +66,11 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red") +
 * col="red" gives a red colour to the dots
 * ggtitle() adds a title to the charts
 * and the last bit adjusts the title to the center
-* Points are to large, but 'shape="."' is not working (work in progress)
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot2.png)
 
 * Points are too large. For some reason, shape="." is not working
 * Legend still does not look good as well
-
 * But the worst is we already know where crimes happened, but we still don't know what crimes happened.
 * So, we add this bit of code
 
