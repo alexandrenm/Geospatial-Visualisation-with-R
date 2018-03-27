@@ -125,7 +125,6 @@ ggmap(get_map(location='Essex', zoom=9)) +
 * Legend still needs improvement
 * Points still large / unclear
 * Could be bigger
-
 * Alternatively, the geom_density2d() can be a good option
 
 ```
@@ -137,6 +136,7 @@ ggmap(get_map(location='Essex', zoom=9)) +
 * Shows clearly where is less safe to be (inside the red circles)
 * We can do this one for each kind of crime
 * Aesthetics can be improved
+
 ```
 densjan17 <- ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred")) + ggtitle("Crime Density in Essex in January 2017") + theme(plot.title = element_text(hjust = 0.5), axis.title.x = element_blank(),axis.title.y = element_blank(),legend.position="none")
 ```
