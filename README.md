@@ -4,7 +4,7 @@ Some simple and useful commands to create nice maps.
 
 ## Description
 
-It is showing possibilities and processes, using Essex crime data, rather a final project about crime (which is likely to become another repository).
+It is showing possibilities and processes, using Essex crime data, rather a final project about crime (which is likely to become another repository). Just playing with data and R.
 
 ## Getting Started
 
@@ -154,8 +154,9 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)
 
-* This one looks really good
+* This one looks better
 * Clearly, something happened in Southend-on-Sea, Basildon, Gays, Chalmsford, Harlow, Colchester and Calcton-on-Sea in January 2017
+* It tells where things happened, but  much some places are riskier than others.
 * Next, it would be interesting to look what happened in each of these cities and compare
 * Compare to other months (this is only January 2017)
 * Compare to population density
