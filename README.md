@@ -83,7 +83,7 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type))
 ```
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot3.png)
 
-* Legend still needs improvment
+* Legend still needs improvement
 * Points still large / unclear
 
 (WORK IN PROGRESS)
