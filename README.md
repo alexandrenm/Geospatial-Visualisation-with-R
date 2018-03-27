@@ -46,7 +46,7 @@ qmplot(data = pol01, Longitude, Latitude)
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot1.png)
 
-* This function automatically centers the points. This ones look off center to include some outliers. We can had limits.
+* This function automatically centers the points. This ones look off center because there are some outliers. We can had limits.
 ```
 qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red") 
 + xlim(-0.2,1.1) + ylim(51.4,52.1) 
@@ -105,7 +105,7 @@ ggmap(get_map(location = 'Essex, zoom = 9')) + geom_point(data = pol01, aes(x=Lo
 * ggmap() uses google map
 * It may need several go's to find the google map
 
-![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot3.png)
+![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot4.png)
 
 ## Authors
 
