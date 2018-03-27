@@ -73,12 +73,14 @@ col=factor(Crime.type)
 ```
 col=pol01$Crime.type
 ```
+* To get this
 ```
 qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type)) 
 + xlim(-0.2,1.1) + ylim(51.4,52.1) 
 + ggtitle("Crime in Essex in January") 
 + theme(plot.title = element_text(hjust = 0.5))
 ```
+![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot3.png)
 
 ## Authors
 
