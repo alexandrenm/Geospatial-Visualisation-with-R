@@ -98,6 +98,12 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type))
 
 * Very similar to what was done before with qmplot() function
 
+* Libraries and packages
+```
+install.packages("ggmap") #if needed
+library(ggmap)
+```
+
 ```
 ggmap(get_map(location='Essex', zoom=9)) 
 + geom_point(data = pol01, aes(x=Longitude, y=Latitude, col=factor(Crime.type), alpha=0.5))
