@@ -138,7 +138,11 @@ ggmap(get_map(location='Essex', zoom=9)) +
 * Aesthetics can be improved
 
 ```
-densjan17 <- ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred")) + ggtitle("Crime Density in Essex in January 2017") + theme(plot.title = element_text(hjust = 0.5), axis.title.x = element_blank(),axis.title.y = element_blank(),legend.position="none")
+densjan17 <- ggmap(get_map(location='Essex', zoom=9)) + 
+    geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred")) + 
+    ggtitle("Crime Density in Essex in January 2017") + 
+    theme(plot.title = element_text(hjust = 0.5), axis.title.x = element_blank(), 
+    axis.title.y = element_blank(),legend.position="none")
 ```
 ```
 ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chosen dimensions
