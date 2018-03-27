@@ -101,6 +101,7 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type))
 ```
 ggmap(get_map(location='Essex', zoom=9)) 
 + geom_point(data = pol01, aes(x=Longitude, y=Latitude, col=factor(Crime.type), alpha=0.5))
+# location can be a continent, a country, a region, a city, a postcode...
 ```
 * ggmap() uses google map
 * It may need several go's to find the google map
