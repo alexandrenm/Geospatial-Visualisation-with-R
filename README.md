@@ -61,6 +61,9 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red")
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot2.png)
 
+* points are to large. For some reason 'shape="."' is not working
+* legend still does not look good as well
+
 ## Authors
 
 Alexandre Marques
