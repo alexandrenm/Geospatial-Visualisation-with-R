@@ -103,7 +103,6 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type)) +
 **Plotting using the ggmap() function:**
 
 * Very similar to what was done before with qmplot() function
-
 * Libraries and packages
 ```
 install.packages("ggplot2") #if needed
