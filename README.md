@@ -100,7 +100,9 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type)) +
 
 * Libraries and packages
 ```
+install.packages("ggplot2") #if needed
 install.packages("ggmap") #if needed
+library(ggplot2)
 library(ggmap)
 ```
 
@@ -118,6 +120,15 @@ ggmap(get_map(location='Essex', zoom=9)) +
 * Legend still needs improvement
 * Points still large / unclear
 * Could be bigger
+
+* Alternatively, the geom_density2d() can be a good option
+```
+ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred"))
+```
+![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/janplot4.png)
+
+
+* Shows clearly where is not safe to be (inside the red circles)
 
 (WORK IN PROGRESS)
 
