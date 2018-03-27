@@ -148,9 +148,13 @@ densjan17 <- ggmap(get_map(location='Essex', zoom=9)) +
 ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chosen dimensions
 ```
 
-* ...
+* Axis title and legend were removed
+* Plot saved slightly bigger using ggsave() function
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)
+
+* This one looks really good
+* Somthing happened at ... in January 2017
 
 (WORK IN PROGRESS)
 
