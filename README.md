@@ -62,19 +62,24 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red")
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot2.png)
 
-* points are too large. For some reason, *shape="."* is not working
-* legend still does not look good as well
+* Points are too large. For some reason, *shape="."* is not working
+* Legend still does not look good as well
 
 * But the worst is we already know where crimes happened, but we still don't know what crimes happened.
 * So, we add this bit of code
+
 ```
 col=factor(Crime.type)
 ```
+
 * Or this
+
 ```
 col=pol01$Crime.type
 ```
+
 * To get this
+
 ```
 qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type)) 
 + xlim(-0.2,1.1) + ylim(51.4,52.1) 
@@ -89,9 +94,18 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type))
 (WORK IN PROGRESS)
 
 
-**Plotting using the qmplot() function:**
+**Plotting using the ggmap() function:**
 
+* Very similar to what was done before with qmplot() function
+
+```
+ggmap(get_map(location = 'Essex, zoom = 9')) + geom_point(data = pol01, aes(x=Longitude, y=Latitude, alpha=0.5, col=factor(Crime.type)))
 (WORK IN PROGRESS)
+```
+* ggmap() uses google map
+* It may need several go's to find the google map
+
+![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot3.png)
 
 ## Authors
 
