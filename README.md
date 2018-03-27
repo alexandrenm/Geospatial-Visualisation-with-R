@@ -151,10 +151,14 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 * Axis title and legend were removed
 * Plot saved slightly bigger using ggsave() function
 
-![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)
+![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png?style=centerme)
 
 * This one looks really good
-* Somthing happened at ... in January 2017
+* Clearly, something happened in Southend-on-Sea, Basildon, Gays, Chalmsford, Harlow, Colchester and Calcton-on-Sea in January 2017
+* Next, it would be interesting to look what happened in each of this cities and compare
+* Compare to other months (this is only January 2017)
+* Comapre to population density
+*...
 
 (WORK IN PROGRESS)
 
