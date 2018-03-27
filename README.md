@@ -23,9 +23,11 @@ Downloading data:
 * The data used here was found here: https://data.police.uk/data/ (Jan 17 to Dec 17, Essex Police, include crime data, then Generate file)
 
 Importing data to R(Studio):
+
 ```
 pol01 <- read.csv('C:/Users/Alex/Desktop/2017-01/2017-01-essex-street.csv') # Crime in Essex in January 2017
 ```
+
 * Naturally, the name 'pol01' could be anything else, just should be something short and easy to remember. 
 * Obviously, this pathway is an example and specific to this file.
 * It needs to be repeated for all other 11 files.
@@ -34,25 +36,31 @@ pol01 <- read.csv('C:/Users/Alex/Desktop/2017-01/2017-01-essex-street.csv') # Cr
 
 **Plotting using the qmplot() function:**
 * Libraries and packages
+
 ```
 install.packages("ggplot2") #if needed
 library(ggplot2)
 ```
+
 * Then, one line code is enough.
+
 ```
 qmplot(data = pol01, Longitude, Latitude)
 ```
+
 * 'Longitude' and 'Latitude' are columns from the imported data (so they may have different names for different data) and they are case sensitive (L not equal to l)
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot1.png)
 
 * This function automatically centers the points. This ones look off center because there are some outliers. We can had limits.
+
 ```
 qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red") +
     xlim(-0.2,1.1) + ylim(51.4,52.1) +
     ggtitle("Crime in Essex in January") + 
     theme(plot.title = element_text(hjust = 0.5))
 ```
+
 * xlim() and ylim() redefine the chart limits
 * alpha() gives transparency to the points
 * col="red" gives a red colour to the dots
@@ -62,7 +70,7 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red") +
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot2.png)
 
-* Points are too large. For some reason, *shape="."* is not working
+* Points are too large. For some reason, shape="." is not working
 * Legend still does not look good as well
 
 * But the worst is we already know where crimes happened, but we still don't know what crimes happened.
@@ -116,12 +124,13 @@ ggmap(get_map(location='Essex', zoom=9)) +
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot4.png)
 
-* Better looking than qmplot()
+* Better looking than qmplot(), I think
 * Legend still needs improvement
 * Points still large / unclear
 * Could be bigger
 
 * Alternatively, the geom_density2d() can be a good option
+
 ```
 ggmap(get_map(location='Essex', zoom=9)) + 
     geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred"))
@@ -137,6 +146,7 @@ densjan17 <- ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = po
 ```
 ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chosen dimensions
 ```
+
 * ...
 
 ![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/densjan17.png)
