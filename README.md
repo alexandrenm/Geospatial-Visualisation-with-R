@@ -166,7 +166,7 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 (WORK IN PROGRESS)
 
 **Data Summmary:**
-* Geospatial visualization help undersanding the data, but does not show everything
+* Geospatial visualization helps undersanding the data, but does not show everything
 * I still want to know which crimes are happening in Essex, and how often
 * Crimes in January 2017:
 ```
@@ -189,6 +189,7 @@ table(pol01$Crime.type)
                         1106                         3119 
 ```
 
+* 13,000 crimes / 1,400,000 people = 9 crimes / 1000 people / month (January 2017)
 * Crimes in July 2017:
 
 ```
