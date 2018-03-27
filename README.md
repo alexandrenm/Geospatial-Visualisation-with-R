@@ -164,6 +164,30 @@ ggsave("densjan17.png", width = 7, height = 7) # For saving the chart with chose
 
 (WORK IN PROGRESS)
 
+**Data Summmary:**
+* Geospatial visualization help undersanding the data, but does not show everything
+* I still want to know wich crimes are happening in Essex, and how often
+
+Crimes in January 2017:
+```
+table(pol01$Crime.type)
+```
+```
+ Anti-social behaviour                Bicycle theft 
+                        3358                          142 
+                    Burglary    Criminal damage and arson 
+                        1083                         1243 
+                       Drugs                  Other crime 
+                         270                          210 
+                 Other theft        Possession of weapons 
+                        1067                          124 
+                Public order                      Robbery 
+                         598                          110 
+                 Shoplifting        Theft from the person 
+                         763                          113 
+               Vehicle crime Violence and sexual offences 
+                        1106                         3119 
+```
 ## Authors
 
 Alexandre Marques
