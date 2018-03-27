@@ -4,7 +4,7 @@ Some simple and useful commands to create nice maps.
 
 ## Description
 
-It is showing possibilities and processes using Essex crime data, rather a final project about crime (which is likely to become another repository).
+It is showing possibilities and processes, using Essex crime data, rather a final project about crime (which is likely to become another repository).
 
 ## Getting Started
 
