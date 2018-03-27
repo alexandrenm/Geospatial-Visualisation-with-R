@@ -31,6 +31,7 @@ pol01 <- read.csv('C:/Users/Alex/Desktop/2017-01/2017-01-essex-street.csv') # Cr
 * It needs to be repeated for all other 11 files.
 * CSV is a compatble file format
 
+
 **Plotting using the qmplot() function:**
 * Libraries and packages
 ```
@@ -86,6 +87,7 @@ qmplot(data = pol01, Longitude, Latitude, alpha=1/100, col=factor(Crime.type))
 * Points still large
 
 (WORK IN PROGRESS)
+
 
 **Plotting using the qmplot() function:**
 
