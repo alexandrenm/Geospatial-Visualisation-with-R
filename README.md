@@ -41,6 +41,22 @@ library(ggplot2)
 ```
 qmplot(data = pol01, Longitude, Latitude)
 ```
+* 'Longitude' and 'Latitude' are columns from the imported data (so they may have different names for different data) and they are case sensitive (L not equal to l)
+
+![](https://github.com/alexandrenm/Spatial-Visualization-in-R/blob/master/janplot1.png)
+
+* This function automatically centers the points. This ones look off center to include some outliers. We can had limits.
+```
+qmplot(data = pol01, Longitude, Latitude, alpha=1/100, shape=".", col="red") 
++ xlim(-0.2,1.1) + ylim(51.4,52.1) 
++ ggtitle("Crime in Essex in January") 
++ theme(plot.title = element_text(hjust = 0.5))
+```
+* xlim() and ylim() redefine the chart limits
+* alpha() gives transparency to the points
+* ggtitle() adds a title to the charts
+* and the last bit adjusts the title to the center
+* Points are to large, but 'shape="."' is not working (work in progress)
 
 ## Authors
 
