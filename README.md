@@ -125,10 +125,10 @@ ggmap(get_map(location='Essex', zoom=9)) +
 ```
 ggmap(get_map(location='Essex', zoom=9)) + geom_density2d(data = pol01, aes(x=Longitude, y=Latitude, col="darkred"))
 ```
-![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/janplot4.png)
-
+![](https://github.com/alexandrenm/Spatial-Visualization-with-R/blob/master/janplot5.png)
 
 * Shows clearly where is not safe to be (inside the red circles)
+* We can do this one for each kind of crime
 
 (WORK IN PROGRESS)
 
